@@ -1,3 +1,4 @@
+<!-- Levantamos servidos de MYSQL -->
 docker container run \
 -dp 3306:3306 \
 --name world-db \
@@ -10,15 +11,19 @@ docker container run \
 mariadb:jammy
 
 
-/* Levantamos servidor Apache */
+<!-- Levantamos servidor Apache -->
 docker container run \
 --name phpmyadmin \
 -d \
 -e PMA_ARBITRARY=1 \
- -p 8080:80 \
+-p 8080:80 \
 --network docker-app \
 phpmyadmin:5.2.0-apache
 
 
-/* Version que vamos a usar */
+<!-- Version que vamos a usar -->
 phpmyadmin:5.2.0-apache
+
+
+<!-- Comando para mandar a correr mi Mysql -->
+docker run -d -p 3306:3306 --name mysql-server -e MYSQL_ROOT_PASSWORD=alberthluiiz mysql:latest
