@@ -13,11 +13,6 @@ RUN npm install
 # Dest /app
 COPY app.js ./
 
-
 # Comando run de la imagen
 CMD [ "node", "app.js" ]
-
-
-
-
 
