@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="/Bootstrap-Teoria/css/bootstrap.min.css">
+
+    <style>
+        .row > div {
+            background: #f2f2f2;
+            margin: 10px 0;
+            padding: 40px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container"> <!-- Primero va un contenedor -->
-        <h2>Hola Mundo</h2>
+    <!-- El container es el contenedor principal, en el iran todas las filas y columnas -->
+    <!-- Con en container podemos centrar nuestra pagina -->
+    <div class="container">
+        <!-- Las filas (Row) son grupos HORIZONTALES de columnas -->
+<!-- 
+    Los tamañños de colimna en Bootstrap 5 son:
+.col        Extra Pequeño (Extra Small) - Smartphones Vertical          Menos de 576px
+.col-sm     Pequeño (Small) - Smartphone Vertical                       Mas de 576px y Menos de 768px
+.col-md     Mediano (Medium) - Tablets                                  Mas de 768px y Menos de 992px
+.col-lg     Largo (Large) - Computadoras                                Mas de 992px y menos de 1200px
+.col-xl     Extra largo (Extra Large) - Computadoras                    Mas de 1200px
+.col-xxl    Extra Extra Largo (Extra Extra Large) - Televisiones        Mas de 1400px 
+-->
+
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nesciunt laboriosam id magnam eligendi ab harum architecto aliquam natus vel, placeat eos quo? Id sit et est ipsam laboriosam cumque.</p>
+                <button class="btn btn-primary">Ver Más</button>
+            </div>
+            <div class="col-12 col-sm-6">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nesciunt laboriosam id magnam eligendi ab harum architecto aliquam natus vel, placeat eos quo? Id sit et est ipsam laboriosam cumque.</p>
+                <button class="btn btn-primary">Ver Más</button>
+            </div>
+            <div class="col-12">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nesciunt laboriosam id magnam eligendi ab harum architecto aliquam natus vel, placeat eos quo? Id sit et est ipsam laboriosam cumque.</p>
+                <button class="btn btn-primary">Ver Más</button>
+            </div>
+        </div>
     </div>
     <script src="/Bootstrap-Teoria/js/bootstrap.bundle.min.js"></script>
 </body>
