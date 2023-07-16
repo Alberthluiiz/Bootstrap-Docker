@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-        <div class="container">
+        <!-- <div class="container">
+            <h1 class="mt-5 text-center text-info">Teoria de Bootstrap</h1>
             <h1 class="mt-5 text-center">Columnas 12</h1>
       <hr>
         <div class="row">
@@ -263,6 +264,575 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h1 class="mt-5 text-center">Tablas</h1>
+      <hr>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="table-warning">
+            <td>1</td>
+            <td>Luis</td>
+            <td>Guillén</td>
+            <td>Desarrollador de Software</td>
+          </tr>
+
+          <tr class="table-info">
+            <td>2</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h1 class="mt-5 h3">Tabla de dos colores</h1>
+      <hr>
+
+      <table class="table table-info table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Luis</td>
+            <td>Guillén</td>
+            <td>Desarrollador de Software</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <h1 class="mt-5 h3">Tablas cambian color cuando pasamos en mouse</h1>
+      <hr>
+
+      <table class="table table-hover table-primary">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Luis</td>
+            <td>Guillén</td>
+            <td>Desarrollador de Software</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <h1 class="mt-5 h3">Tablas con bordes</h1>
+      <hr>
+
+      <table class="table table-bordered table-warning table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Luis</td>
+            <td>Guillén</td>
+            <td>Desarrollador de Software</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <h1 class="mt-5 h3">Tablas sin bordes</h1>
+      <hr>
+
+      <table class="table table-borderless table-warning table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Luis</td>
+            <td>Guillén</td>
+            <td>Desarrollador de Software</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Andy</td>
+            <td>Totasig</td>
+            <td>Estudiante</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+      <h1 class="mt-5 h3">Tablas modo responsive</h1>
+      <hr>
+
+      <div class="table-responsive">
+        <table class="table table-sm table-borderless table-hover">
+          <caption>Lista de Usuario</caption>
+          <thead class="table-info">
+            <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+              <th>Descripción</th>
+              <th>Informacion</th>
+              <th>Detalle</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Luis</td>
+              <td>Guillén</td>
+              <td>Desarrollador de Software</td>
+              <td>Descripción</td>
+              <td>Descripción</td>
+              <td>Descripción</td>
+            </tr>
+  
+            <tr>
+              <td>2</td>
+              <td>Andy</td>
+              <td>Totasig</td>
+              <td>Estudiante</td>
+              <td>Informacion</td>
+              <td>Informacion</td>
+              <td>Informacion</td>
+            </tr>
+  
+            <tr>
+              <td>3</td>
+              <td>Andy</td>
+              <td>Totasig</td>
+              <td>Estudiante</td>
+              <td>Detalle</td>
+              <td>Detalle</td>
+              <td>Detalle</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+
+
+
+      <h1 class="mt-5 h3">Tablas modo responsive con titulo</h1>
+      <hr>
+
+      <div class="table-responsive">
+        <table class="table table-sm table-borderless table-hover caption-top">
+          <caption>Lista de Usuario</caption>
+          <thead class="table-info">
+            <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+              <th>Descripción</th>
+              <th>Informacion</th>
+              <th>Detalle</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Luis</td>
+              <td>Guillén</td>
+              <td>Desarrollador de Software</td>
+              <td>Descripción</td>
+              <td>Descripción</td>
+              <td>Descripción</td>
+            </tr>
+  
+            <tr>
+              <td>2</td>
+              <td>Andy</td>
+              <td>Totasig</td>
+              <td>Estudiante</td>
+              <td>Informacion</td>
+              <td>Informacion</td>
+              <td>Informacion</td>
+            </tr>
+  
+            <tr>
+              <td>3</td>
+              <td>Andy</td>
+              <td>Totasig</td>
+              <td>Estudiante</td>
+              <td>Detalle</td>
+              <td>Detalle</td>
+              <td>Detalle</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+              <td>Footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </div> -->
+
+    <!-- <div class="container">
+      <h1 class="mt-5 text-center">Formularios</h1>
+      <hr>
+      <h1 class="mt-5">Formulario basico</h1>
+      <hr>
+      <form action="">
+
+        <div class="mb-3">
+          <label class="form-label" for="name">Nombre</label>
+          <input placeholder="Ej. Luis Guillen" class="form-control" name="name" type="text" id="name">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input placeholder="Ej. correo@correo.com" class="form-control" name="email" type="email" id="email">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="description">Descripción</label>
+          <textarea placeholder="Por favor escriba una descripcion" class="form-control" name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+      </form>
+    </div> -->
+
+    <!-- <div class="container">
+      <h1 class="mt-5 text-center">Formulario 2</h1>
+      <hr>
+      <h1 class="mt-5">Formulario basico</h1>
+      <hr class="mb-5">
+      <form action="">
+        <div class="row">
+          <div class="col-auto">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-auto">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+   </div> -->
+
+   <!-- <div class="container">
+    <h1 class="mt-5 text-center">Formulario 3</h1>
+    <hr class="mb-5">
+    <form action="">
+      <div class="mb-5">
+        <label class="form-label" for="formFile">Input file predetermindao</label>
+        <input class="form-control" type="file" name="formFile" id="formFile">
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="formFileMultiple">Input file Multiple</label>
+        <input class="form-control" type="file" name="formFileMultiple" id="formFile" multiple>
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="formFileDesable">Input file Desabilitado</label>
+        <input class="form-control" type="file" name="formFileDesable" id="formFile" disabled>
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="formFileDesable">Input file pequeño</label>
+        <input class="form-control form-control-sm" type="file" name="formFileDesable" id="formFile" disabled>
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="formFileDesable">Input file grande</label>
+        <input class="form-control form-control-lg" type="file" name="formFileDesable" id="formFile" disabled>
+      </div>
+    </form>
+ </div> -->
+
+
+ <!-- <div class="container">
+  <h1 class="mt-5 text-center">Formulario 4</h1>
+  <hr class="mb-5">
+  <form action="">
+    <label class="form-label" for="colorinput">Selector de color</label>
+    <input class="form-control form-control-color" type="color" id="colorinput" value="#23467E">
+  </form>
+</div> -->
+
+<!-- <div class="container mb-5">
+  <h1 class="mt-5 text-center">Formularios Listas Despegables</h1>
+  <hr class="mb-5">
+  <h1 class="mt-5 h3">Listas Despegables</h1>
+  <hr class="mb-5">
+  <form action="">
+    <select name="" id="" class="form-select">
+      <option value="">Selecciones una opcion</option>
+      <option value="1"> Opción 1 </option>
+      <option value="2"> Opción 2 </option>
+      <option value="3"> Opción 3 </option>
+      <option value="4"> Opción 4 </option>
+      <option value="5"> Opción 5 </option>
+    </select>
+  </form>
+
+  <h1 class="mt-5 h3">Listas despegables grande</h1>
+  <hr class="mb-5">
+  <form action="">
+    <select name="" id="" class="form-select form-select-lg">
+      <option value="">Selecciones una opcion</option>
+      <option value="1"> Opción 1 </option>
+      <option value="2"> Opción 2 </option>
+      <option value="3"> Opción 3 </option>
+      <option value="4"> Opción 4 </option>
+      <option value="5"> Opción 5 </option>
+    </select>
+  </form>
+
+  <h1 class="mt-5 h3">Listas despegables pequeña</h1>
+  <hr class="mb-5">
+  <form action="">
+    <select name="" id="" class="form-select form-select-sm">
+      <option value="">Selecciones una opcion</option>
+      <option value="1"> Opción 1 </option>
+      <option value="2"> Opción 2 </option>
+      <option value="3"> Opción 3 </option>
+      <option value="4"> Opción 4 </option>
+      <option value="5"> Opción 5 </option>
+    </select>
+  </form>
+
+
+  <h1 class="mt-5 h3">Listas despegables desabilitada</h1>
+  <hr class="mb-5">
+  <form action="">
+    <select name="" id="" class="form-select" disabled>
+      <option value="">Selecciones una opcion</option>
+      <option value="1"> Opción 1 </option>
+      <option value="2"> Opción 2 </option>
+      <option value="3"> Opción 3 </option>
+      <option value="4"> Opción 4 </option>
+      <option value="5"> Opción 5 </option>
+    </select>
+  </form>
+
+
+  <h1 class="mt-5 h3">Listas despegables multiple</h1>
+  <hr class="mb-5">
+  <form action="">
+    <select name="" id="" class="form-select" disabled multiple>
+      <option value="">Selecciones una opcion</option>
+      <option value="1"> Opción 1 </option>
+      <option value="2"> Opción 2 </option>
+      <option value="3"> Opción 3 </option>
+      <option value="4"> Opción 4 </option>
+      <option value="5"> Opción 5 </option>
+    </select>
+  </form>
+</div> -->
+
+<div class="container mb-5">
+  <h1 class="mt-5 text-center">Tipos de Checkbox y Radios</h1>
+  <hr class="mb-5">
+  <h1 class="mt-5 h3">Checkbox ya seleccionado</h1>
+  <hr class="mb-5">
+  <form action="">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox1">
+      <label class="form-check-label" for="checkbox1">Input de tipo checkbox 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox2">
+      <label class="form-check-label" for="checkbox2">Input de tipo checkbox 2</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox3" checked>
+      <label class="form-check-label" for="checkbox3">Input de tipo checkbox 3</label>
+    </div>
+
+
+    <h1 class="mt-5 h3">Checkbox Desabilitado</h1>
+  <hr class="mb-5">
+  <form action="">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox1">
+      <label class="form-check-label" for="checkbox1">Input de tipo checkbox 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox2" disabled>
+      <label class="form-check-label" for="checkbox2">Input de tipo checkbox 2</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox3">
+      <label class="form-check-label" for="checkbox3">Input de tipo checkbox 3</label>
+    </div>
+
+    <h1 class="mt-5 h3">Radio sin seleccionar</h1>
+    <hr class="mb-5">
+    <form action="">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="radio1" name="radioprueba">
+        <label class="form-check-label" for="radio1">Input de tipo radio 1</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="radio2" name="radioprueba">
+        <label class="form-check-label" for="radio2">Input de tipo radio 1</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="radio3" name="radioprueba">
+        <label class="form-check-label" for="radio3">Input de tipo radio 1</label>
+      </div>
+    </form>
+
+
+    <h1 class="mt-5 h3">Radio ya seleccionado</h1>
+  <hr class="mb-5">
+  <form action="">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio1" name="radioprueba">
+      <label class="form-check-label" for="radio1">Input de tipo radio 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio2" name="radioprueba">
+      <label class="form-check-label" for="radio2">Input de tipo radio 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio3" name="radioprueba" checked>
+      <label class="form-check-label" for="radio3">Input de tipo radio 1</label>
+    </div>
+  </form>
+
+
+
+  <h1 class="mt-5 h3">Radio Desabilitado</h1>
+  <hr class="mb-5">
+  <form action="">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio1" name="prueba">
+      <label class="form-check-label" for="radio1">Input de tipo radio 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio2" name="prueba" disabled>
+      <label class="form-check-label" for="radio2">Input de tipo radio 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="radio3" name="prueba">
+      <label class="form-check-label" for="radio3">Input de tipo radio 1</label>
+    </div>
+  </form>
+
+  
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
