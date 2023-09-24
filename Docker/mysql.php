@@ -18,9 +18,11 @@ GRANT ALL PRIVILEGES ON *.* TO 'luis'@'localhost' WITH GRANT OPTION;
 
 mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'alberthluiiz';
 
 <!-- Otorgar todos los privilegios al nuevo usuario -->
 GRANT ALL PRIVILEGES ON *.* TO 'luis'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
 
 <!-- comandos para ver los usuarios que tenemos -->
